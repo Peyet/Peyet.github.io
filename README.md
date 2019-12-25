@@ -1,2 +1,2 @@
-# Peyet.github.io
+# Peyet's blog
 ***
