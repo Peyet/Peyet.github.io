@@ -1,129 +1,14 @@
-
-
-
-
-
-
-
-<!doctype html>
-<html lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta name="author" content="John Doe">
-  
-  
-  
-  
-    <meta name="description" content>
-  
-  <title> [ Hexo ]</title>
-  
-  
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[ Peyet ]</title>
 </head>
-
-<div class="random-center hide-area">
-  <div id="random-index">
-    <div class="center-field">
-      <img class="avatar" src="https://github.com/Peyet/Peyet.github.io/blob/master/css/images/mountnelson_marinebiology_wip12.png?raw=true" width="120" height="120" onclick="openUserCard()">
-    </div>
-    <div class="center-field">
-      <div class="title" onclick="openUserCard()">Hexo</div>
-      <div class="sub-title" onclick="openUserCard()"></div>
-    </div>
-    <hr>
-    <div class="center-field">
-      <ul class="index-nav-link">
-        
-        
-      </ul>
-      <ul class="social-icon">
-  
-  
-</ul>
-    </div>
-  </div>
-</div>
-<div id="user-card">
-  <div class="center-field">
-    <img class="avatar" src="https://github.com/Peyet/Peyet.github.io/blob/master/css/images/mountnelson_marinebiology_wip12.png?raw=true">
-    <p id="description"></p>
-    <ul class="social-icon">
-  
-  
-</ul>
-  </div>
-</div>
-
-
-<script>
-// is trigger analytics / tongji script
-var isIgnoreHost = false;
-
-if(window && window.location && window.location.host) {
-  isIgnoreHost = "".some(function(address){
-    return 0 === window.location.host.indexOf(address);
-  });
-}
-
-var isTriggerAnalytics = !( "" && isIgnoreHost );
-
-</script>
-
-
-
-
-<script>
-
-var vegasConfig = "";
-var unsplashConfig = "";
-// is show background images
-var turnoffBackgroundImage = false;
-
-
-
-
-var backgroundColor = "";
-
-$(".fancybox-thumb").fancybox({
-  prevEffect: 'none',
-  nextEffect: 'none',
-  helpers: {
-    title: {
-      type: 'outside'
-    },
-    thumbs: {
-      width: 50,
-      height: 50
-    }
-  }
-});
-
-// show video with plyr
-$(".video-container iframe").each(function(i){
-  var url = $(this).attr('src');
-  var id = url.split('/').pop();
-  var plyrContainer = document.createElement('div');
-  plyrContainer.className = 'plyr';
-  var plyrElement = document.createElement('div');
-  plyrElement.dataset.videoId = id;
-  switch(true) {
-    case url.search('youtube.com') >= 0:
-      plyrElement.dataset.type = 'youtube';
-      break;
-    case url.search('vimeo.com') >= 0:
-      plyrElement.dataset.type = 'vimeo';
-      break;
-    default:
-      return;
-  };
-  plyrContainer.appendChild(plyrElement);
-  $(this).parent().html(plyrContainer);
-});
-plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
-</script>
-
+<body>
+  <h1 align = center>Peyet's blog</h1>
+  <hr />
+  <!-- <img src="" alt="Pic"> -->
+</body>
 </html>
-
